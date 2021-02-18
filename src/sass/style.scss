@@ -1,0 +1,19 @@
+@import 'libs/bootstrap-reboot.min';
+@import 'libs/fonts';
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 990px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+// @import 'blocks/order';
+@import 'blocks/products';
+@import 'blocks/footer';
+@import 'blocks/media';

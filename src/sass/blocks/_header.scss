@@ -1,0 +1,175 @@
+.header {
+    min-height: 250px;
+    padding-top: 25px;
+    display: flex;
+    flex-direction: column;
+    color: #000;
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    &__social {
+        margin-right: 20px;
+        &-link {
+            margin-left: 10px;
+        }
+    }
+    &__current {
+        &-link {
+            text-transform: capitalize;
+            color: #000;
+            &:nth-child(1) {
+                padding-right: 8px;
+                border-right: 1px solid #000;
+            }
+            &:nth-child(2) {
+                padding-left: 8px;
+            }
+            &:hover {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+    }
+    &__center {
+        padding-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        &-input {
+            outline: none;
+            border: 1px solid #ababab;
+            border-radius: 10px;
+            padding: 0 10px;
+            color: #000;
+            font-size: 14px;
+            line-height: 2;
+
+        }
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 10px;
+        }
+        &-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            color: #666666;
+        }
+    }
+    &__tel {
+        color: #000;
+        &:hover {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+    &__title {
+        color: #000;
+        font-size: 52px;
+        font-weight: 400;
+    }
+    &__nav {
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-bottom: 1px solid #f2f2f2;
+        position: relative;
+        &-list {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            margin-bottom: 0;
+            transition: all .4s;
+        }
+        &-item {
+            margin-left: 25px;
+            &:first-child {
+                margin-left: 0;
+            }
+        }
+        &-link {
+            font-size: 14px;
+            color: #000;
+            transition: all .4s;
+            &:hover {
+                text-decoration: none;
+                color: rgb(14, 4, 110);
+            }
+        }
+        &-card {
+            img {
+                margin-right: 10px;
+            }
+            color: #000;
+            &:hover {
+                color: #000;
+                text-decoration: none;
+            }
+        }
+        &-close {
+            display: none;
+            position: absolute;
+            right: 20%;
+            top: 7%;
+            transition: all .4s;
+            span {
+                display: block;
+                height: 1px;
+                background-color: #000;
+                width: 30px;
+                &:first-child {
+                    transform: rotateZ(-45deg);
+                }
+                &:last-child {
+                    transform: rotateZ(45deg);
+                }
+            }
+        }
+    }
+    &__bottom {
+        padding: 20px 0 30px;
+        display: grid;
+        grid-template: 1fr / repeat(3, 1fr);
+        justify-content: space-between;
+        &-item {
+            display: flex;
+            align-items: center;
+            &:last-child {
+                justify-content: flex-end;
+            }
+            img {
+                margin-right: 10px;
+            }
+        }
+        &-text {
+            font-size: 15px;
+        }
+    }
+}
+.hamburger {
+    margin: 25px 0;
+    font-size: 28px;
+    display: none;
+    align-items: center;
+    width: 30%;
+    justify-content: space-around;
+    transition: all .4s;
+    &__icon {
+        width: 30px;
+        span {
+            display: block;
+            background-color: #000;
+            height: 1px;
+            margin-bottom: 6px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
